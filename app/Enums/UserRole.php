@@ -4,24 +4,18 @@ namespace App\Enums;
 
 enum UserRole: string
 {
-    case Administrator = 'administrator';
-    case RegionalTssd = 'regional_tssd';
-    case ProvincialOffice = 'provincial_office';
-    case Evaluator = 'evaluator';
-    case ImsdProcurement = 'imsd_procurement';
-    case ReportingMe = 'reporting_me';
-    case ManagementViewer = 'management_viewer';
+    case SuperAdmin = 'super_admin';
+    case GIP = 'gip';
+    case Focal = 'focal';
+    case DilpCoordinator = 'dilp_coordinator';
 
     public function label(): string
     {
         return match ($this) {
-            self::Administrator => 'Administrator',
-            self::RegionalTssd => 'Regional / TSSD User',
-            self::ProvincialOffice => 'Provincial Office User',
-            self::Evaluator => 'Evaluator',
-            self::ImsdProcurement => 'IMSD / Procurement User',
-            self::ReportingMe => 'Reporting / M&E User',
-            self::ManagementViewer => 'Management Viewer',
+            self::SuperAdmin => 'Super Admin',
+            self::GIP => 'GIP',
+            self::Focal => 'Focal',
+            self::DilpCoordinator => 'DILP Coordinator',
         };
     }
 }
