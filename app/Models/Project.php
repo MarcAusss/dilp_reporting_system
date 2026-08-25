@@ -112,4 +112,10 @@ class Project extends Model
             'updated_by'
         );
     }
+    public function financial(): HasOne
+    {
+        return $this->hasOne(
+            ProjectFinancial::class
+        );
+    }
 }

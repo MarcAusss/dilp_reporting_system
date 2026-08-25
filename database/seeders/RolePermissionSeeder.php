@@ -37,7 +37,8 @@ class RolePermissionSeeder extends Seeder
         */
 
         $allPermissions = array_map(
-            fn(PermissionName $permission): string => $permission->value,
+            fn(PermissionName $permission): string =>
+            $permission->value,
             PermissionName::cases()
         );
 
@@ -48,17 +49,14 @@ class RolePermissionSeeder extends Seeder
 
         /*
         |--------------------------------------------------------------------------
-        | Operational Accounts
+        | Operational Roles
         |--------------------------------------------------------------------------
-        |
-        | Workflow-specific create/update/approve permissions will be assigned
-        | in later phases once the responsibilities of each role are defined.
-        |
         */
 
         $operationalPermissions = [
             PermissionName::DashboardView->value,
             PermissionName::ProjectsView->value,
+            PermissionName::ProjectFinancialsView->value,
         ];
 
         $operationalRoles = [

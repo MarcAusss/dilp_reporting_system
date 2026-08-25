@@ -21,6 +21,9 @@ enum PermissionName: string
     case ProjectsUpdate = 'projects.update';
     case ProjectsArchive = 'projects.archive';
 
+    case ProjectFinancialsView = 'project-financials.view';
+    case ProjectFinancialsUpdate = 'project-financials.update';
+
     public function label(): string
     {
         return match ($this) {
@@ -40,6 +43,9 @@ enum PermissionName: string
             self::ProjectsCreate => 'Create Projects',
             self::ProjectsUpdate => 'Update Projects',
             self::ProjectsArchive => 'Archive Projects',
+
+            self::ProjectFinancialsView => 'View Project Financial Details',
+            self::ProjectFinancialsUpdate => 'Update Project Financial Details',
         };
     }
 }
