@@ -649,10 +649,10 @@
 
                                 <div class="flex justify-end gap-2">
 
-                                    @can('project-financials.view')
-                                        <a href="{{ route('projects.financials', $project) }}"
-                                            class=" rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-[#164b73] transition hover:bg-blue-50">
-                                            Financials
+                                    @can('projects.view')
+                                        <a href="{{ route('projects.show', $project) }}"
+                                            class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-[#164b73] transition hover:bg-blue-50">
+                                            Profile
                                         </a>
                                     @endcan
                                     @can('projects.update')

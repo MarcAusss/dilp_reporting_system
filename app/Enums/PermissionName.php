@@ -24,6 +24,22 @@ enum PermissionName: string
     case ProjectFinancialsView = 'project-financials.view';
     case ProjectFinancialsUpdate = 'project-financials.update';
 
+    case ProjectBeneficiariesView = 'project-beneficiaries.view';
+    case ProjectBeneficiariesUpdate = 'project-beneficiaries.update';
+
+    case ProjectLivelihoodsView = 'project-livelihoods.view';
+    case ProjectLivelihoodsUpdate = 'project-livelihoods.update';
+
+    case ProjectBudgetItemsView = 'project-budget-items.view';
+    case ProjectBudgetItemsUpdate = 'project-budget-items.update';
+
+    case ProjectConvergenceView = 'project-convergence.view';
+    case ProjectConvergenceUpdate = 'project-convergence.update';
+
+    case ProjectWorkflowView = 'project-workflow.view';
+    case ProjectWorkflowUpdate = 'project-workflow.update';
+    case WorkQueuesView = 'work-queues.view';
+
     public function label(): string
     {
         return match ($this) {
@@ -46,6 +62,22 @@ enum PermissionName: string
 
             self::ProjectFinancialsView => 'View Project Financial Details',
             self::ProjectFinancialsUpdate => 'Update Project Financial Details',
+
+            self::ProjectBeneficiariesView => 'View Project Beneficiaries',
+            self::ProjectBeneficiariesUpdate => 'Update Project Beneficiaries',
+
+            self::ProjectLivelihoodsView => 'View Project Livelihood Details',
+            self::ProjectLivelihoodsUpdate => 'Update Project Livelihood Details',
+
+            self::ProjectBudgetItemsView => 'View Project Budget Items',
+            self::ProjectBudgetItemsUpdate => 'Update Project Budget Items',
+
+            self::ProjectConvergenceView => 'View Project Convergence Details',
+            self::ProjectConvergenceUpdate => 'Update Project Convergence Details',
+
+            self::ProjectWorkflowView => 'View Project Workflow',
+            self::ProjectWorkflowUpdate => 'Update Project Workflow',
+            self::WorkQueuesView => 'View Work Queues',
         };
     }
 }

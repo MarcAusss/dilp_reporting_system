@@ -53,25 +53,34 @@ class RolePermissionSeeder extends Seeder
         |--------------------------------------------------------------------------
         */
 
-        $operationalPermissions = [
+        $operationalReadPermissions = [
             PermissionName::DashboardView->value,
             PermissionName::ProjectsView->value,
             PermissionName::ProjectFinancialsView->value,
+            PermissionName::ProjectBeneficiariesView->value,
+            PermissionName::ProjectLivelihoodsView->value,
+            PermissionName::ProjectBudgetItemsView->value,
+            PermissionName::ProjectConvergenceView->value,
+            PermissionName::ProjectWorkflowView->value,
         ];
 
-        $operationalRoles = [
-            UserRole::GIP,
+        Role::findByName(
+            UserRole::GIP->value,
+            'web'
+        )->syncPermissions($operationalReadPermissions);
+
+        foreach ([
             UserRole::Focal,
             UserRole::DilpCoordinator,
-        ];
-
-        foreach ($operationalRoles as $role) {
+        ] as $role) {
             Role::findByName(
                 $role->value,
                 'web'
-            )->syncPermissions(
-                    $operationalPermissions
-                );
+            )->syncPermissions([
+                ...$operationalReadPermissions,
+                PermissionName::ProjectWorkflowUpdate->value,
+                PermissionName::WorkQueuesView->value,
+            ]);
         }
 
         app(PermissionRegistrar::class)

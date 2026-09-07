@@ -23,6 +23,8 @@
             </x-slot:actions>
         </x-ui.page-header>
 
+        <x-projects.profile-tabs :project="$project" />
+
         <livewire:projects.financial-details :project-id="$project->id" />
 
     </div>

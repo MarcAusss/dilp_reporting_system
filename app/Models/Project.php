@@ -3,6 +3,10 @@
 namespace App\Models;
 
 use App\Enums\ProjectRecordStatus;
+use App\Enums\ProjectWorkflowAction;
+use App\Enums\ProjectWorkflowStage;
+use App\Enums\ProjectWorkflowStatus;
+use App\Enums\UserRole;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -52,6 +56,30 @@ class Project extends Model
                         $project->getKey()
                     ),
                 ])->saveQuietly();
+            }
+
+            if (! $project->workflowState()->exists()) {
+                $actedAt = $project->created_at ?? now();
+
+                $project->workflowState()->create([
+                    'stage' => ProjectWorkflowStage::Evaluation,
+                    'status' => ProjectWorkflowStatus::Pending,
+                    'assigned_role' => UserRole::DilpCoordinator->value,
+                    'started_at' => $actedAt,
+                    'last_action_at' => $actedAt,
+                    'updated_by' => $project->created_by,
+                ]);
+
+                $project->workflowEvents()->create([
+                    'from_stage' => null,
+                    'from_status' => null,
+                    'to_stage' => ProjectWorkflowStage::Evaluation,
+                    'to_status' => ProjectWorkflowStatus::Pending,
+                    'action' => ProjectWorkflowAction::Registered,
+                    'assigned_role' => UserRole::DilpCoordinator->value,
+                    'acted_by' => $project->created_by,
+                    'acted_at' => $actedAt,
+                ]);
             }
         });
     }
@@ -117,5 +145,35 @@ class Project extends Model
         return $this->hasOne(
             ProjectFinancial::class
         );
+    }
+
+    public function beneficiaries(): HasMany
+    {
+        return $this->hasMany(ProjectBeneficiary::class);
+    }
+
+    public function livelihoods(): HasMany
+    {
+        return $this->hasMany(ProjectLivelihood::class);
+    }
+
+    public function budgetItems(): HasMany
+    {
+        return $this->hasMany(ProjectBudgetItem::class);
+    }
+
+    public function convergences(): HasMany
+    {
+        return $this->hasMany(ProjectConvergence::class);
+    }
+
+    public function workflowState(): HasOne
+    {
+        return $this->hasOne(ProjectWorkflowState::class);
+    }
+
+    public function workflowEvents(): HasMany
+    {
+        return $this->hasMany(ProjectWorkflowEvent::class);
     }
 }

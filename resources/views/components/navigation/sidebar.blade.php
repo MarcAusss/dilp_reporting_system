@@ -66,7 +66,10 @@
                             :active="request()->routeIs('projects.*')" />
                     @endcan
 
-                    <x-navigation.sidebar-item label="Work Queues" icon="queue" :disabled="true" />
+                    @can('work-queues.view')
+                        <x-navigation.sidebar-item label="Work Queues" route="work-queues.index" icon="queue"
+                            :active="request()->routeIs('work-queues.*')" />
+                    @endcan
                 </div>
             </div>
 
