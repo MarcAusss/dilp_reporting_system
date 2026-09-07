@@ -176,4 +176,34 @@ class Project extends Model
     {
         return $this->hasMany(ProjectWorkflowEvent::class);
     }
+
+    public function procurements(): HasMany
+    {
+        return $this->hasMany(ProjectProcurement::class);
+    }
+
+    public function obligations(): HasMany
+    {
+        return $this->hasMany(ProjectObligation::class);
+    }
+
+    public function disbursements(): HasMany
+    {
+        return $this->hasMany(ProjectDisbursement::class);
+    }
+
+    public function insurances(): HasMany
+    {
+        return $this->hasMany(ProjectInsurance::class);
+    }
+
+    public function implementation(): HasOne
+    {
+        return $this->hasOne(ProjectImplementation::class);
+    }
+
+    public function replacementRequests(): HasMany
+    {
+        return $this->hasMany(ProjectReplacementRequest::class);
+    }
 }

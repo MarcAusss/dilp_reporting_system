@@ -47,6 +47,7 @@ Route::middleware([
                 'budgetItems',
                 'convergences.program',
                 'workflowState',
+                'implementation',
             ]);
 
             return view(
@@ -145,6 +146,19 @@ Route::middleware([
         '/work-queues',
         'work-queues.index'
     )->name('work-queues.index');
+});
+
+Route::middleware([
+    'auth',
+    'can:project-processing.view',
+])->group(function () {
+    Route::get(
+        '/projects/{project}/processing',
+        fn (Project $project) => view(
+            'projects.processing',
+            compact('project')
+        )
+    )->name('projects.processing');
 });
 
 Route::middleware([

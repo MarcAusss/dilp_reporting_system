@@ -37,6 +37,11 @@
             'route' => 'projects.workflow',
             'permission' => 'project-workflow.view',
         ],
+        [
+            'label' => 'Implementation Processing',
+            'route' => 'projects.processing',
+            'permission' => 'project-processing.view',
+        ],
     ];
 @endphp
 

@@ -40,6 +40,9 @@ enum PermissionName: string
     case ProjectWorkflowUpdate = 'project-workflow.update';
     case WorkQueuesView = 'work-queues.view';
 
+    case ProjectProcessingView = 'project-processing.view';
+    case ProjectProcessingUpdate = 'project-processing.update';
+
     public function label(): string
     {
         return match ($this) {
@@ -78,6 +81,9 @@ enum PermissionName: string
             self::ProjectWorkflowView => 'View Project Workflow',
             self::ProjectWorkflowUpdate => 'Update Project Workflow',
             self::WorkQueuesView => 'View Work Queues',
+
+            self::ProjectProcessingView => 'View Project Financial & Implementation Processing',
+            self::ProjectProcessingUpdate => 'Update Project Financial & Implementation Processing',
         };
     }
 }

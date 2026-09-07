@@ -6,7 +6,7 @@
 @section('content')
     <div class="space-y-7">
         <x-ui.page-header title="Project Profile" eyebrow="Project Registry"
-            description="Consolidated DILP project profile and Phase 3 project data coverage.">
+            description="Consolidated DILP project profile, financial data, workflow, and implementation coverage.">
             <x-slot:actions>
                 <x-ui.button variant="secondary" href="{{ route('projects.index') }}">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4">
@@ -20,7 +20,7 @@
         <x-projects.profile-tabs :project="$project" />
         <x-projects.identity-card :project="$project" />
 
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
             <x-ui.card>
                 <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Beneficiaries</p>
                 <p class="mt-3 text-2xl font-bold text-slate-950">{{ number_format($project->beneficiaries->count()) }}</p>
@@ -45,6 +45,22 @@
                 <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Convergence</p>
                 <p class="mt-3 text-2xl font-bold text-slate-950">{{ number_format($project->convergences->count()) }}</p>
                 <p class="mt-1 text-xs text-slate-500">Recorded partner/program interventions</p>
+            </x-ui.card>
+
+            <x-ui.card>
+                <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Implementation</p>
+                <div class="mt-3">
+                    @if ($project->implementation)
+                        <x-ui.badge :variant="$project->implementation->status->badgeVariant()">
+                            {{ $project->implementation->status->label() }}
+                        </x-ui.badge>
+                        <p class="mt-2 text-lg font-bold text-slate-950">{{ number_format($project->implementation->accomplishment_percentage) }}%</p>
+                    @else
+                        <x-ui.badge>Not Started</x-ui.badge>
+                        <p class="mt-2 text-lg font-bold text-slate-950">0%</p>
+                    @endif
+                </div>
+                <p class="mt-1 text-xs text-slate-500">Current implementation accomplishment</p>
             </x-ui.card>
         </div>
 
