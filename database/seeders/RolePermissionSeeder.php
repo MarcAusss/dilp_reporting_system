@@ -63,6 +63,12 @@ class RolePermissionSeeder extends Seeder
             PermissionName::ProjectConvergenceView->value,
             PermissionName::ProjectWorkflowView->value,
             PermissionName::ProjectProcessingView->value,
+            PermissionName::ProjectDocumentsView->value,
+            PermissionName::ProjectMonitoringView->value,
+            PermissionName::ReportsView->value,
+            PermissionName::ReportsExport->value,
+            PermissionName::FundTargetsView->value,
+            PermissionName::BeneficiariesView->value,
         ];
 
         Role::findByName(
@@ -82,6 +88,8 @@ class RolePermissionSeeder extends Seeder
                 PermissionName::ProjectWorkflowUpdate->value,
                 PermissionName::WorkQueuesView->value,
                 PermissionName::ProjectProcessingUpdate->value,
+                PermissionName::ProjectDocumentsUpdate->value,
+                PermissionName::ProjectMonitoringUpdate->value,
             ]);
         }
 

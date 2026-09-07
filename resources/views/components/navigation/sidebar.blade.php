@@ -80,11 +80,23 @@
                 </p>
 
                 <div class="space-y-1">
-                    <x-navigation.sidebar-item label="Funds & Targets" icon="funds" :disabled="true" />
+                    @can('project-monitoring.view')
+                        <x-navigation.sidebar-item label="Monitoring & Compliance" route="monitoring.index" icon="reports"
+                            :active="request()->routeIs('monitoring.*')" />
+                    @endcan
 
-                    <x-navigation.sidebar-item label="Beneficiaries" icon="beneficiaries" :disabled="true" />
+                    @can('fund-targets.view')
+                        <x-navigation.sidebar-item label="Funds & Targets" route="funds.index" icon="funds" :active="request()->routeIs('funds.*')" />
+                    @endcan
 
-                    <x-navigation.sidebar-item label="Reports" icon="reports" :disabled="true" />
+                    @can('beneficiaries.view')
+                        <x-navigation.sidebar-item label="Beneficiaries" route="beneficiaries.index" icon="beneficiaries" :active="request()->routeIs('beneficiaries.*')" />
+                    @endcan
+
+                    @can('reports.view')
+                        <x-navigation.sidebar-item label="Reports" route="reports.index" icon="reports"
+                            :active="request()->routeIs('reports.*')" />
+                    @endcan
                 </div>
             </div>
 
@@ -96,7 +108,19 @@
                     </p>
 
                     <div class="space-y-1">
-                        <x-navigation.sidebar-item label="Users" icon="users" :disabled="true" />
+                        @can('users.view')
+                            <x-navigation.sidebar-item label="Users" route="users.index" icon="users" :active="request()->routeIs('users.*')" />
+                        @endcan
+
+                        @can('data-imports.view')
+                            <x-navigation.sidebar-item label="Legacy Data Import" route="data-imports.index" icon="projects"
+                                :active="request()->routeIs('data-imports.*')" />
+                        @endcan
+
+                        @can('data-quality.view')
+                            <x-navigation.sidebar-item label="Data Quality" route="data-quality.index" icon="reports"
+                                :active="request()->routeIs('data-quality.*')" />
+                        @endcan
 
                         @can('master-data.view')
                             <x-navigation.sidebar-item label="Master Data" route="master-data.index" icon="settings"
@@ -108,7 +132,16 @@
                                 :active="request()->routeIs('locations.*')" />
                         @endcan
 
-                        <x-navigation.sidebar-item label="Audit Logs" icon="audit" :disabled="true" />
+                        @can('audit-logs.view')
+                            <x-navigation.sidebar-item label="Audit Logs" route="audit-logs.index" icon="audit"
+                                :active="request()->routeIs('audit-logs.*')" />
+                        @endcan
+
+
+                        @can('spreadsheet-parity.view')
+                            <x-navigation.sidebar-item label="Spreadsheet Parity" route="spreadsheet-parity.index" icon="reports"
+                                :active="request()->routeIs('spreadsheet-parity.*')" />
+                        @endcan
                     </div>
                 </div>
             @endcan

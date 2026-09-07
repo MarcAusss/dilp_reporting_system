@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
             RolePermissionSeeder::class,
             SuperAdminUserSeeder::class,
             MasterDataSeeder::class,
+            LegacySpreadsheetProjectSeeder::class,
         ]);
     }
 }

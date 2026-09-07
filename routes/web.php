@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProjectDocumentController;
+use App\Http\Controllers\ReportController;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
@@ -48,6 +50,10 @@ Route::middleware([
                 'convergences.program',
                 'workflowState',
                 'implementation',
+                'documents',
+                'monitoringVisits',
+                'monitoringFindings',
+                'complianceReports',
             ]);
 
             return view(
@@ -159,6 +165,149 @@ Route::middleware([
             compact('project')
         )
     )->name('projects.processing');
+});
+
+Route::middleware([
+    'auth',
+    'can:project-monitoring.view',
+])->group(function () {
+    Route::view(
+        '/monitoring',
+        'monitoring.index'
+    )->name('monitoring.index');
+});
+
+Route::middleware([
+    'auth',
+    'can:project-documents.view',
+])->group(function () {
+    Route::get(
+        '/projects/{project}/documents',
+        fn (Project $project) => view(
+            'projects.documents',
+            compact('project')
+        )
+    )->name('projects.documents');
+
+    Route::get(
+        '/projects/{project}/documents/{document}/download',
+        [ProjectDocumentController::class, 'download']
+    )->name('projects.documents.download');
+});
+
+Route::middleware([
+    'auth',
+    'can:project-monitoring.view',
+])->group(function () {
+    Route::get(
+        '/projects/{project}/monitoring',
+        fn (Project $project) => view(
+            'projects.monitoring',
+            compact('project')
+        )
+    )->name('projects.monitoring');
+});
+
+
+Route::middleware([
+    'auth',
+    'can:reports.view',
+])->prefix('reports')->group(function () {
+    Route::get(
+        '/',
+        [ReportController::class, 'index']
+    )->name('reports.index');
+
+    Route::get(
+        '/{report}',
+        [ReportController::class, 'show']
+    )->name('reports.show');
+
+    Route::get(
+        '/{report}/print',
+        [ReportController::class, 'print']
+    )->name('reports.print');
+});
+
+Route::middleware([
+    'auth',
+    'can:reports.export',
+])->get(
+    '/reports/{report}/excel',
+    [ReportController::class, 'excel']
+)->name('reports.excel');
+
+
+
+Route::middleware(['auth', 'can:fund-targets.view'])->group(function () {
+    Route::view('/funds', 'funds.index')->name('funds.index');
+});
+
+Route::middleware(['auth', 'can:beneficiaries.view'])->group(function () {
+    Route::view('/beneficiaries', 'beneficiaries.index')->name('beneficiaries.index');
+});
+
+Route::middleware(['auth', 'can:users.view'])->group(function () {
+    Route::view('/administration/users', 'administration.users.index')->name('users.index');
+});
+
+Route::middleware([
+    'auth',
+    'can:data-imports.view',
+])->prefix('administration/imports')->group(function () {
+    Route::view(
+        '/',
+        'administration.imports.index'
+    )->name('data-imports.index');
+
+    Route::get(
+        '/{batch}',
+        fn (\App\Models\DataImportBatch $batch) => view(
+            'administration.imports.review',
+            compact('batch')
+        )
+    )->name('data-imports.review');
+
+    Route::get(
+        '/{batch}/download',
+        [\App\Http\Controllers\Administration\ImportFileController::class, 'download']
+    )->name('data-imports.download');
+});
+
+Route::middleware([
+    'auth',
+    'can:data-quality.view',
+])->group(function () {
+    Route::view(
+        '/administration/data-quality',
+        'administration.data-quality.index'
+    )->name('data-quality.index');
+});
+
+Route::middleware([
+    'auth',
+    'can:audit-logs.view',
+])->group(function () {
+    Route::view(
+        '/administration/audit-logs',
+        'administration.audit-logs.index'
+    )->name('audit-logs.index');
+});
+
+
+Route::middleware([
+    'auth',
+    'can:spreadsheet-parity.view',
+])->group(function () {
+    Route::view(
+        '/administration/spreadsheet-parity',
+        'administration.spreadsheet-parity.index'
+    )->name('spreadsheet-parity.index');
+
+    Route::get(
+        '/administration/spreadsheet-parity/export',
+        \App\Http\Controllers\Administration\SpreadsheetParityExportController::class
+    )->name('spreadsheet-parity.export');
 });
 
 Route::middleware([

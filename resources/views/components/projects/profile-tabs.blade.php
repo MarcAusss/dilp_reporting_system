@@ -42,6 +42,16 @@
             'route' => 'projects.processing',
             'permission' => 'project-processing.view',
         ],
+        [
+            'label' => 'Documents',
+            'route' => 'projects.documents',
+            'permission' => 'project-documents.view',
+        ],
+        [
+            'label' => 'Monitoring',
+            'route' => 'projects.monitoring',
+            'permission' => 'project-monitoring.view',
+        ],
     ];
 @endphp
 

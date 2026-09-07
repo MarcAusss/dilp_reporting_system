@@ -43,6 +43,25 @@ enum PermissionName: string
     case ProjectProcessingView = 'project-processing.view';
     case ProjectProcessingUpdate = 'project-processing.update';
 
+    case ProjectDocumentsView = 'project-documents.view';
+    case ProjectDocumentsUpdate = 'project-documents.update';
+
+    case ProjectMonitoringView = 'project-monitoring.view';
+    case ProjectMonitoringUpdate = 'project-monitoring.update';
+
+    case ReportsView = 'reports.view';
+    case ReportsExport = 'reports.export';
+
+    case DataImportsView = 'data-imports.view';
+    case DataImportsManage = 'data-imports.manage';
+    case DataQualityView = 'data-quality.view';
+    case AuditLogsView = 'audit-logs.view';
+    case SpreadsheetParityView = 'spreadsheet-parity.view';
+
+    case FundTargetsView = 'fund-targets.view';
+    case FundTargetsUpdate = 'fund-targets.update';
+    case BeneficiariesView = 'beneficiaries.view';
+
     public function label(): string
     {
         return match ($this) {
@@ -84,6 +103,25 @@ enum PermissionName: string
 
             self::ProjectProcessingView => 'View Project Financial & Implementation Processing',
             self::ProjectProcessingUpdate => 'Update Project Financial & Implementation Processing',
+
+            self::ProjectDocumentsView => 'View Project Documents',
+            self::ProjectDocumentsUpdate => 'Update Project Documents',
+
+            self::ProjectMonitoringView => 'View Project Monitoring & Compliance',
+            self::ProjectMonitoringUpdate => 'Update Project Monitoring & Compliance',
+
+            self::ReportsView => 'View DILP Reports',
+            self::ReportsExport => 'Export DILP Reports',
+
+            self::DataImportsView => 'View Legacy Data Imports',
+            self::DataImportsManage => 'Manage Legacy Data Imports',
+            self::DataQualityView => 'View Data Quality Checks',
+            self::AuditLogsView => 'View Audit Logs',
+            self::SpreadsheetParityView => 'View Spreadsheet Parity Audit',
+
+            self::FundTargetsView => 'View Funds & Targets',
+            self::FundTargetsUpdate => 'Update Funds & Targets',
+            self::BeneficiariesView => 'View Beneficiary Registry',
         };
     }
 }

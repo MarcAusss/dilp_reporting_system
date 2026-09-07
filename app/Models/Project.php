@@ -206,4 +206,24 @@ class Project extends Model
     {
         return $this->hasMany(ProjectReplacementRequest::class);
     }
+
+    public function documents(): HasMany
+    {
+        return $this->hasMany(ProjectDocument::class);
+    }
+
+    public function monitoringVisits(): HasMany
+    {
+        return $this->hasMany(ProjectMonitoringVisit::class);
+    }
+
+    public function monitoringFindings(): HasMany
+    {
+        return $this->hasMany(ProjectMonitoringFinding::class);
+    }
+
+    public function complianceReports(): HasMany
+    {
+        return $this->hasMany(ProjectComplianceReport::class);
+    }
 }

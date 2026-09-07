@@ -20,7 +20,7 @@
         <x-projects.profile-tabs :project="$project" />
         <x-projects.identity-card :project="$project" />
 
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7">
             <x-ui.card>
                 <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Beneficiaries</p>
                 <p class="mt-3 text-2xl font-bold text-slate-950">{{ number_format($project->beneficiaries->count()) }}</p>
@@ -61,6 +61,18 @@
                     @endif
                 </div>
                 <p class="mt-1 text-xs text-slate-500">Current implementation accomplishment</p>
+            </x-ui.card>
+
+            <x-ui.card>
+                <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Documents</p>
+                <p class="mt-3 text-2xl font-bold text-slate-950">{{ number_format($project->documents->count()) }}</p>
+                <p class="mt-1 text-xs text-slate-500">Documentary requirements recorded</p>
+            </x-ui.card>
+
+            <x-ui.card>
+                <p class="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">Monitoring</p>
+                <p class="mt-3 text-2xl font-bold text-slate-950">{{ number_format($project->monitoringVisits->count()) }}</p>
+                <p class="mt-1 text-xs text-slate-500">{{ number_format($project->monitoringFindings->filter(fn ($finding) => $finding->status->isOpen())->count()) }} open finding(s)</p>
             </x-ui.card>
         </div>
 
