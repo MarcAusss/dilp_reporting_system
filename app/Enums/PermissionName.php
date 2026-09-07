@@ -49,6 +49,9 @@ enum PermissionName: string
     case ProjectMonitoringView = 'project-monitoring.view';
     case ProjectMonitoringUpdate = 'project-monitoring.update';
 
+    case ProjectSpreadsheetDetailsView = 'project-spreadsheet-details.view';
+    case ProjectSpreadsheetDetailsUpdate = 'project-spreadsheet-details.update';
+
     case ReportsView = 'reports.view';
     case ReportsExport = 'reports.export';
 
@@ -109,6 +112,8 @@ enum PermissionName: string
 
             self::ProjectMonitoringView => 'View Project Monitoring & Compliance',
             self::ProjectMonitoringUpdate => 'Update Project Monitoring & Compliance',
+            self::ProjectSpreadsheetDetailsView => 'View Spreadsheet Parity Details',
+            self::ProjectSpreadsheetDetailsUpdate => 'Update Spreadsheet Parity Details',
 
             self::ReportsView => 'View DILP Reports',
             self::ReportsExport => 'Export DILP Reports',

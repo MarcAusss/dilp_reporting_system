@@ -13,6 +13,8 @@ class ProjectProcurement extends Model
         'reference_number',
         'description',
         'supplier',
+        'procurement_method',
+        'is_epa',
         'procurement_date',
         'amount',
         'status',
@@ -24,6 +26,7 @@ class ProjectProcurement extends Model
     protected function casts(): array
     {
         return [
+            'is_epa' => 'boolean',
             'procurement_date' => 'date',
             'amount' => 'decimal:2',
             'status' => ProcurementStatus::class,

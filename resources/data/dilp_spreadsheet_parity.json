@@ -15,13 +15,20 @@
     "working_sheet_field_count": 310,
     "supplemental_source_field_count": 72,
     "coverage": {
-      "covered": 24,
-      "missing": 50,
-      "partial": 548,
-      "derived": 30
+      "covered": 305,
+      "derived": 30,
+      "partial": 287,
+      "missing": 30
     },
     "unclassified_count": 0,
-    "generated_report_header_count": 270
+    "generated_report_header_count": 270,
+    "coverage_counts": {
+      "covered": 305,
+      "derived": 30,
+      "partial": 287,
+      "missing": 30
+    },
+    "phase_10_implemented": 281
   },
   "sheets": [
     {
@@ -1171,10 +1178,10 @@
       "header": "ADL/NTA NO.",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Funding References / Sponsors",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1183,10 +1190,10 @@
       "header": "Fund Sponsor",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Funding References / Sponsors",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1195,10 +1202,10 @@
       "header": "PartyList/ NGA",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Funding References / Sponsors",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1207,10 +1214,10 @@
       "header": "Cong./ Sen.",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Funding References / Sponsors",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1219,10 +1226,10 @@
       "header": "Local Chief Executive/Congressman/Point Person",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Funding References / Sponsors",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1267,10 +1274,10 @@
       "header": "District",
       "kind": "source_input",
       "domain": "location",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_locations.district + project_funding_details.district",
       "target_module": "District / Congressional Metadata",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1279,10 +1286,10 @@
       "header": "Actual Charging",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Project Funding Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1291,10 +1298,10 @@
       "header": "Amount",
       "kind": "source_input",
       "domain": "funding",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_funding_details",
       "target_module": "Project Funding Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1303,10 +1310,10 @@
       "header": "1ST INDORSEMENT (Date Received by RO)",
       "kind": "source_input",
       "domain": "endorsement",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_endorsements",
       "target_module": "Project Endorsements",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1315,10 +1322,10 @@
       "header": "2ND INDORSEMENT (Date Received by RO)",
       "kind": "source_input",
       "domain": "endorsement",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_endorsements",
       "target_module": "Project Endorsements",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1327,10 +1334,10 @@
       "header": "3RD INDORSEMENT (Date Received by RO)",
       "kind": "source_input",
       "domain": "endorsement",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_endorsements",
       "target_module": "Project Endorsements",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1339,10 +1346,10 @@
       "header": "NO. OF LCOM ISSUED PRIOR APPROVAL",
       "kind": "source_input",
       "domain": "compliance",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_compliance_communications",
       "target_module": "LCOM / Compliance Communications",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1351,10 +1358,10 @@
       "header": "DATES",
       "kind": "source_input",
       "domain": "compliance",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_compliance_communications",
       "target_module": "LCOM / Compliance Communications",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1399,10 +1406,10 @@
       "header": "DETAILS TALLY WITH DIS",
       "kind": "source_input",
       "domain": "dis_validation",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_dis_validations",
       "target_module": "DIS Validation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1411,10 +1418,10 @@
       "header": "STATUS OF PROPOSAL IN DIS",
       "kind": "source_input",
       "domain": "dis_validation",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_dis_validations",
       "target_module": "DIS Validation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1423,10 +1430,10 @@
       "header": "FOR UPDATING",
       "kind": "source_input",
       "domain": "dis_validation",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_dis_validations",
       "target_module": "DIS Validation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1435,10 +1442,10 @@
       "header": "FOR COORDINATION TO PO",
       "kind": "source_input",
       "domain": "dis_validation",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_dis_validations",
       "target_module": "DIS Validation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1447,10 +1454,10 @@
       "header": "FOR COORDINATION WITH THE CO",
       "kind": "source_input",
       "domain": "dis_validation",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_dis_validations",
       "target_module": "DIS Validation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1471,10 +1478,10 @@
       "header": "PROPONENT (Abbreviation Only)",
       "kind": "source_input",
       "domain": "proponent",
-      "coverage": "partial",
-      "current_destination": "proponents.name",
+      "coverage": "covered",
+      "current_destination": "proponents extended fields",
       "target_module": "Expanded Proponent Profile",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1483,10 +1490,10 @@
       "header": "PROPONENT- COMPLETE NAME (for CQPR only)",
       "kind": "source_input",
       "domain": "proponent",
-      "coverage": "partial",
-      "current_destination": "proponents.name",
+      "coverage": "covered",
+      "current_destination": "proponents extended fields",
       "target_module": "Expanded Proponent Profile",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1495,10 +1502,10 @@
       "header": "LCE/ Head of Office (for NTP and NAFA)",
       "kind": "source_input",
       "domain": "proponent",
-      "coverage": "partial",
-      "current_destination": "proponents.name",
+      "coverage": "covered",
+      "current_destination": "proponents extended fields",
       "target_module": "Expanded Proponent Profile",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1507,10 +1514,10 @@
       "header": "NAME OF ASSOCIATION/ ORGANIZATION",
       "kind": "source_input",
       "domain": "proponent",
-      "coverage": "partial",
-      "current_destination": "proponents.name",
+      "coverage": "covered",
+      "current_destination": "proponents extended fields",
       "target_module": "Expanded Proponent Profile",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1519,10 +1526,10 @@
       "header": "NO. OF BEN.",
       "kind": "source_input",
       "domain": "beneficiary",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries (person-level only)",
+      "coverage": "covered",
+      "current_destination": "project_beneficiary_metrics",
       "target_module": "Legacy Beneficiary Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1531,10 +1538,10 @@
       "header": "NO. OF FEMALE",
       "kind": "source_input",
       "domain": "beneficiary",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries (person-level only)",
+      "coverage": "covered",
+      "current_destination": "project_beneficiary_metrics",
       "target_module": "Legacy Beneficiary Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1543,10 +1550,10 @@
       "header": "TOTAL AMOUNT GRANTED TO FEMALE",
       "kind": "source_input",
       "domain": "beneficiary",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries (person-level only)",
+      "coverage": "covered",
+      "current_destination": "project_beneficiary_metrics",
       "target_module": "Legacy Beneficiary Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1663,10 +1670,10 @@
       "header": "District",
       "kind": "source_input",
       "domain": "location",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_locations.district + income_class",
       "target_module": "District / Income Class Metadata",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1675,10 +1682,10 @@
       "header": "Income Class",
       "kind": "source_input",
       "domain": "location",
-      "coverage": "missing",
-      "current_destination": "—",
+      "coverage": "covered",
+      "current_destination": "project_locations.district + income_class",
       "target_module": "District / Income Class Metadata",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1687,10 +1694,10 @@
       "header": "TYPE OF BENEFICIARY/ IES",
       "kind": "source_input",
       "domain": "beneficiary",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors + beneficiary pivot",
+      "coverage": "covered",
+      "current_destination": "project_beneficiary_metrics.beneficiary_type_ies",
       "target_module": "Beneficiary / IES Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1843,10 +1850,10 @@
       "header": "DATE MOA RECEIVED",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1855,10 +1862,10 @@
       "header": "DATE FORWARDED FOR SIGNATURE",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1867,10 +1874,10 @@
       "header": "DATE SIGNED COPY RETURNED TO TSSD",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1879,10 +1886,10 @@
       "header": "DATE OF NOTARIAL SLIP",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1891,10 +1898,10 @@
       "header": "DATE FORWARDED TO NOTARIAL OFFICE",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1903,10 +1910,10 @@
       "header": "DATE OF NOTARIZATION",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1915,10 +1922,10 @@
       "header": "DATE NOTARIZED COPY RECEIVED BY THE TSSD",
       "kind": "source_input",
       "domain": "moa",
-      "coverage": "partial",
-      "current_destination": "project_documents (generic only)",
+      "coverage": "covered",
+      "current_destination": "project_moa_records",
       "target_module": "MOA Processing Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1927,10 +1934,10 @@
       "header": "DATE OF OBLIGATION",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1939,10 +1946,10 @@
       "header": "Payee",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1951,10 +1958,10 @@
       "header": "Date Prepared and Forwarded to Signatories",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1963,10 +1970,10 @@
       "header": "Date and Time Released",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1975,10 +1982,10 @@
       "header": "CHECK NO./LDDAP-ADA NO.",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1987,10 +1994,10 @@
       "header": "DATE OF CHECK NO./ LDDAP-ADA NO.",
       "kind": "source_input",
       "domain": "payment",
-      "coverage": "partial",
-      "current_destination": "project_obligations / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_obligations + project_disbursements extended fields",
       "target_module": "Detailed Obligation & Payment Timeline",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -1999,10 +2006,10 @@
       "header": "NO. OF BENEFS ENROLLED TO GPAI",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2011,10 +2018,10 @@
       "header": "AMOUNT (No. of ben x 50.00)",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2023,10 +2030,10 @@
       "header": "STATUS",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2035,10 +2042,10 @@
       "header": "FUND SOURCE",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2047,10 +2054,10 @@
       "header": "DATE FORWARDED FOR ENROLLMENT",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2059,10 +2066,10 @@
       "header": "CASH ADVANCE PAYEE",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2071,10 +2078,10 @@
       "header": "RESPONSIBLE PERSON",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2083,10 +2090,10 @@
       "header": "DATE RECEIVED OF OR AND POLICY FROM LIASON OFFICER",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2095,10 +2102,10 @@
       "header": "OR NO.",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2107,10 +2114,10 @@
       "header": "OR DATE",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2119,10 +2126,10 @@
       "header": "POLICY NO.",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI / Microinsurance",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2131,10 +2138,10 @@
       "header": "DV NUMBER",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI Payment References",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2143,10 +2150,10 @@
       "header": "DATE OF CHECK",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI Payment References",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2155,10 +2162,10 @@
       "header": "CHECK NO.",
       "kind": "source_input",
       "domain": "insurance",
-      "coverage": "partial",
-      "current_destination": "project_insurances / project_disbursements",
+      "coverage": "covered",
+      "current_destination": "project_gpai_records",
       "target_module": "GPAI Payment References",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2167,10 +2174,10 @@
       "header": "STATUS",
       "kind": "source_input",
       "domain": "workflow",
-      "coverage": "partial",
-      "current_destination": "project_workflow_states",
+      "coverage": "covered",
+      "current_destination": "project_status_snapshots + project_workflow_states",
       "target_module": "Spreadsheet Workflow Taxonomy",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2179,10 +2186,10 @@
       "header": "ON GOING CHECKING OF PR",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2191,10 +2198,10 @@
       "header": "W/ APPROVED PR",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2203,10 +2210,10 @@
       "header": "ON GOING PROCUREMENT PROCESS",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2215,10 +2222,10 @@
       "header": "DL PROJECTS (PROCESSING FOR PAYMENT)",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2227,10 +2234,10 @@
       "header": "OBLIGATED",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2239,10 +2246,10 @@
       "header": "PO AND SUPPLIER",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2251,10 +2258,10 @@
       "header": "DISBURSED",
       "kind": "source_input",
       "domain": "processing",
-      "coverage": "partial",
-      "current_destination": "project_procurements / obligations / disbursements",
+      "coverage": "covered",
+      "current_destination": "project_stage_metrics",
       "target_module": "Stage Beneficiary & Amount Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2263,10 +2270,10 @@
       "header": "EPA/ REG PROCUREMENT (For DA Projects Only)",
       "kind": "source_input",
       "domain": "procurement",
-      "coverage": "partial",
-      "current_destination": "project_procurements",
+      "coverage": "covered",
+      "current_destination": "project_procurements.procurement_method + is_epa",
       "target_module": "Procurement Method / EPA",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2275,10 +2282,10 @@
       "header": "MONTH APPROVED",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2287,10 +2294,10 @@
       "header": "REPORTED IN SPRS",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2299,10 +2306,10 @@
       "header": "MONTH",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2311,10 +2318,10 @@
       "header": "REMARKS",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2323,10 +2330,10 @@
       "header": "REPORTED IN CQPR",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2335,10 +2342,10 @@
       "header": "QUARTER REPORTED IN CQPR",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2347,10 +2354,10 @@
       "header": "REMARKS",
       "kind": "source_input",
       "domain": "reporting",
-      "coverage": "partial",
-      "current_destination": "project_compliance_reports",
+      "coverage": "covered",
+      "current_destination": "project_reporting_inclusions",
       "target_module": "SPRS / CQPR Inclusion Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2359,10 +2366,10 @@
       "header": "ASSISTED UNDER THE TASK FORCE ZERO HUNGER",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Report / NTF-ELCAC / Zero Hunger Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2371,10 +2378,10 @@
       "header": "NTF ELCAC REPORT",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Report / NTF-ELCAC / Zero Hunger Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2383,10 +2390,10 @@
       "header": "REMARKS",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Report / NTF-ELCAC / Zero Hunger Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2395,10 +2402,10 @@
       "header": "MONTH APPROVED (For PCLs only)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2407,10 +2414,10 @@
       "header": "MONTH REPORTED IN SPRS (For PCLs only)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2419,10 +2426,10 @@
       "header": "PCL (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2431,10 +2438,10 @@
       "header": "PCL (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2443,10 +2450,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PCL",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2455,10 +2462,10 @@
       "header": "NAME OF PCL BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2467,10 +2474,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2479,10 +2486,10 @@
       "header": "ADDRESS/ES OF PCL BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2491,10 +2498,10 @@
       "header": "SR. CITIZEN (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2503,10 +2510,10 @@
       "header": "SR. CITIZEN (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2515,10 +2522,10 @@
       "header": "TOTAL AMOUNT GRANTED TO SR. CITIZEN",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2527,10 +2534,10 @@
       "header": "NAME OF SR. CITIZEN BENEF/S/ AGE",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2539,10 +2546,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2551,10 +2558,10 @@
       "header": "ADDRESS/ES OF SR. CITIZEN BENEFS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2563,10 +2570,10 @@
       "header": "PWD (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2575,10 +2582,10 @@
       "header": "PWD (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2587,10 +2594,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PWD",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2599,10 +2606,10 @@
       "header": "NAME OF PWD BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2611,10 +2618,10 @@
       "header": "TYPE OF DISABILITY",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2623,10 +2630,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2635,10 +2642,10 @@
       "header": "ADDRESS/ES OF PWD BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2647,10 +2654,10 @@
       "header": "SOLO PARENT (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2659,10 +2666,10 @@
       "header": "SOLO PARENT (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2671,10 +2678,10 @@
       "header": "TOTAL AMOUNT GRANTED TO SOLO PARENT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2683,10 +2690,10 @@
       "header": "NAME OF SOLO PARENT BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2695,10 +2702,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2707,10 +2714,10 @@
       "header": "ADDRESS/ES OF SOLO PARENT BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2719,10 +2726,10 @@
       "header": "INDIGENOUS PEOPLE (IPs) (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2731,10 +2738,10 @@
       "header": "INDIGENOUS PEOPLE (IPs) (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2743,10 +2750,10 @@
       "header": "TOTAL AMOUNT GRANTED TO IPs",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2755,10 +2762,10 @@
       "header": "NAME OF IPs",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2767,10 +2774,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2779,10 +2786,10 @@
       "header": "ADDRESS/ES OF IPs",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2791,10 +2798,10 @@
       "header": "YOUTH (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2803,10 +2810,10 @@
       "header": "YOUTH (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2815,10 +2822,10 @@
       "header": "TOTAL AMOUNT GRANTED TO YOUTH",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2827,10 +2834,10 @@
       "header": "NAME OF YOUTH BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2839,10 +2846,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2851,10 +2858,10 @@
       "header": "ADDRESS/ES OF YOUTH BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2863,10 +2870,10 @@
       "header": "PERSONS DEPRIVED OF LIBERTY (PDL) (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2875,10 +2882,10 @@
       "header": "PERSONS DEPRIVED OF LIBERTY (PDL) (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2887,10 +2894,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PDLS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2899,10 +2906,10 @@
       "header": "NAME OF PDLs",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2911,10 +2918,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2923,10 +2930,10 @@
       "header": "ADDRESS/ES/ DETENTION AREA OF PDLS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2935,10 +2942,10 @@
       "header": "FAMILY OF PERSONS DEPRIVED OF LIBERTY (PDL) (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2947,10 +2954,10 @@
       "header": "FAMILY OF PERSONS DEPRIVED OF LIBERTY (PDL) (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2959,10 +2966,10 @@
       "header": "TOTAL AMOUNT GRANTED TO FAMILY OF PDLS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2971,10 +2978,10 @@
       "header": "NAME OF FAMILY MEMBER",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2983,10 +2990,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -2995,10 +3002,10 @@
       "header": "ADDRESS/ES OF FAMILY MEMBERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3007,10 +3014,10 @@
       "header": "PAROLEES (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3019,10 +3026,10 @@
       "header": "PAROLEES (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3031,10 +3038,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PAROLEES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3043,10 +3050,10 @@
       "header": "NAME OF PAROLEE",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3055,10 +3062,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3067,10 +3074,10 @@
       "header": "ADDRESS/ES OF PAROLEES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3079,10 +3086,10 @@
       "header": "PROBATIONERS (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3091,10 +3098,10 @@
       "header": "PROBATIONERS (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3103,10 +3110,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PROBATIONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3115,10 +3122,10 @@
       "header": "NAME OF PROBATIONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3127,10 +3134,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3139,10 +3146,10 @@
       "header": "ADDRESS/ES OF PROBATIONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3151,10 +3158,10 @@
       "header": "PARDONERS (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3163,10 +3170,10 @@
       "header": "PARDONERS (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3175,10 +3182,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PARDONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3187,10 +3194,10 @@
       "header": "NAME OF PARDONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3199,10 +3206,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3211,10 +3218,10 @@
       "header": "ADDRESS/ES OF PARDONERS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3223,10 +3230,10 @@
       "header": "REBEL RETURNEES/ FORMER REBELS (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3235,10 +3242,10 @@
       "header": "REBEL RETURNEES/ FORMER REBELS (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3247,10 +3254,10 @@
       "header": "TOTAL AMOUNT GRANTED TO REBEL RETURNEES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3259,10 +3266,10 @@
       "header": "NAME OF REBEL RETURNEES BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3271,10 +3278,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3283,10 +3290,10 @@
       "header": "ADDRESS/ES OF REBEL RETURNEES BENEF/S",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3295,10 +3302,10 @@
       "header": "KILLED-IN-ACTION (KIA) (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3307,10 +3314,10 @@
       "header": "KILLED-IN-ACTION (KIA) (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3319,10 +3326,10 @@
       "header": "WOUNDED-IN-ACTION (WIA) (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3331,10 +3338,10 @@
       "header": "WOUNDED-IN-ACTION (WIA) (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3343,10 +3350,10 @@
       "header": "FAMILIES OF KIA/ WIA (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3355,10 +3362,10 @@
       "header": "FAMILIES OF KIA/ WIA (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3367,10 +3374,10 @@
       "header": "TOTAL AMOUNT GRANTED TO KIA/ WIA/ FAMILIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3379,10 +3386,10 @@
       "header": "NAME OF KIA/ WIA/ FAMILIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3391,10 +3398,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3403,10 +3410,10 @@
       "header": "ADDRESS/ES OF KIA/ WIA/ FAMILIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3415,10 +3422,10 @@
       "header": "PERSONS WHO USED DRUGS (PWUDS)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3427,10 +3434,10 @@
       "header": "FEMALE - PERSONS WHO USED DRUGS (PWUDS)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3439,10 +3446,10 @@
       "header": "TOTAL AMOUNT GRANTED TO PWUDS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3451,10 +3458,10 @@
       "header": "NAME OF PWUDS/ NAME OF FAMILY MEMBER",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3463,10 +3470,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3475,10 +3482,10 @@
       "header": "ADDRESS/ES OF PWDUS/FAMILY",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3487,10 +3494,10 @@
       "header": "EXITED 4PS BENEFICIARIES (Total)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3499,10 +3506,10 @@
       "header": "EXITED 4PS BENEFICIARIES (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3511,10 +3518,10 @@
       "header": "TOTAL AMOUNT GRANTED TO EXITED 4PS BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3523,10 +3530,10 @@
       "header": "NAME OF EXITED 4PS BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3535,10 +3542,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3547,10 +3554,10 @@
       "header": "ADDRESS/ES OF EXITED 4PS BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3559,10 +3566,10 @@
       "header": "GRADUATION APPROACH (GA) - DILP BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3571,10 +3578,10 @@
       "header": "GRADUATION APPROACH (GA) - DILP BENEFICIARIES (Female)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3583,10 +3590,10 @@
       "header": "TOTAL AMOUNT GRANTED TO GA-DILP BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3595,10 +3602,10 @@
       "header": "NAME OF GA-DILP BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3607,10 +3614,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3619,10 +3626,10 @@
       "header": "ADDRESS/ES OF GA-DILP BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3631,10 +3638,10 @@
       "header": "TESDA Graduate",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3643,10 +3650,10 @@
       "header": "Female TESDA Graduate",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3655,10 +3662,10 @@
       "header": "4Ps Beneficiary that are PCLs (TOTAL)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3667,10 +3674,10 @@
       "header": "4Ps Beneficiary that are PCLs (FEMALE)",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3679,10 +3686,10 @@
       "header": "EL NIÑO AFFECTED BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3691,10 +3698,10 @@
       "header": "BENEFS UNDER GIDAS",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3703,10 +3710,10 @@
       "header": "TOTAL ENTSUPERNEUR BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3715,10 +3722,10 @@
       "header": "FEMALE ENTSUPERNEUR BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3727,10 +3734,10 @@
       "header": "TOTAL AMOUNT GRANTED TO ENTSUPERNEUR BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3739,10 +3746,10 @@
       "header": "NAME OF ENTSUPERNEUR BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3751,10 +3758,10 @@
       "header": "NAME OF PROJECT",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3763,10 +3770,10 @@
       "header": "ADDRESS/ES OF ENTSUPERNEUR BENEFICIARIES",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "project_beneficiaries + beneficiary_sectors",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Legacy Sector Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3775,10 +3782,10 @@
       "header": "TAV Beneficiaries",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Internal Convergence Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3787,10 +3794,10 @@
       "header": "Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Internal Convergence Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3799,10 +3806,10 @@
       "header": "WODP PROJECT",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Internal Convergence Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3811,10 +3818,10 @@
       "header": "Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Internal Convergence Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3823,10 +3830,10 @@
       "header": "Covergence Initiatives",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Convergence Partnership Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3835,10 +3842,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Convergence Partnership Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3847,10 +3854,10 @@
       "header": "Tyoe of Beneficiaries",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Convergence Partnership Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3859,10 +3866,10 @@
       "header": "No. of Females",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Convergence Partnership Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3871,10 +3878,10 @@
       "header": "Amount of Assisstance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_convergence_metrics",
       "target_module": "Convergence Partnership Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3883,10 +3890,10 @@
       "header": "DATE RECEIVED",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3895,10 +3902,10 @@
       "header": "Inclusions of post-docs./liquidation report",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3907,10 +3914,10 @@
       "header": "ARE",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3919,10 +3926,10 @@
       "header": "DATE OF CHECK AWARDING TO PROPONENT (Basis: QPR)",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3931,10 +3938,10 @@
       "header": "REMARKS",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3943,10 +3950,10 @@
       "header": "DATE AWARDED TO BENEFICIARIES (Basis: QPR and POst Docs)",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3955,10 +3962,10 @@
       "header": "Date Forwarded to Supply Unit",
       "kind": "source_input",
       "domain": "post_implementation",
-      "coverage": "partial",
-      "current_destination": "project_documents / implementation / monitoring",
+      "coverage": "covered",
+      "current_destination": "project_post_implementation_records",
       "target_module": "Post Docs & Liquidation",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3967,10 +3974,10 @@
       "header": "NO. OF BENF/S REPLACED",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3979,10 +3986,10 @@
       "header": "Original Beneficiary",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -3991,10 +3998,10 @@
       "header": "Reason/s for replacement",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4003,10 +4010,10 @@
       "header": "Replacement Benefciary",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4015,10 +4022,10 @@
       "header": "DATE OF LETTER OF APPROVAL",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4027,10 +4034,10 @@
       "header": "DATE AND TIME RELEASED",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4039,10 +4046,10 @@
       "header": "DATE ARE and PROOF OF INSURANCE RECEIVED",
       "kind": "source_input",
       "domain": "replacement",
-      "coverage": "partial",
-      "current_destination": "project_replacement_requests",
+      "coverage": "covered",
+      "current_destination": "project_replacement_requests extended fields",
       "target_module": "Beneficiary Replacement Detail",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4051,10 +4058,10 @@
       "header": "No of beneficiary",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4063,10 +4070,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4075,10 +4082,10 @@
       "header": "Nature of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4087,10 +4094,10 @@
       "header": "Name of Beneficiary",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4099,10 +4106,10 @@
       "header": "No of Beneficairies",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4111,10 +4118,10 @@
       "header": "No of Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4123,10 +4130,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4135,10 +4142,10 @@
       "header": "Name or Benef and Nature of Undertaking",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4147,10 +4154,10 @@
       "header": "No of Beneficairies",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4159,10 +4166,10 @@
       "header": "No of Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4171,10 +4178,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4183,10 +4190,10 @@
       "header": "Name or Benef and Nature of Undertaking",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4195,10 +4202,10 @@
       "header": "No of Beneficairies",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4207,10 +4214,10 @@
       "header": "No of Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4219,10 +4226,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4231,10 +4238,10 @@
       "header": "Name or Benef and Nature of Undertaking",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4243,10 +4250,10 @@
       "header": "No. of Association",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4255,10 +4262,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4267,10 +4274,10 @@
       "header": "No. of Female",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4279,10 +4286,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4291,10 +4298,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4303,10 +4310,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4315,10 +4322,10 @@
       "header": "Nature of Project",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "Special Program / Referral Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4327,10 +4334,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4339,10 +4346,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4351,10 +4358,10 @@
       "header": "Nature of Project",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4363,10 +4370,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4375,10 +4382,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4387,10 +4394,10 @@
       "header": "Nature of Project",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4399,10 +4406,10 @@
       "header": "No. of Beneficiaries",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4411,10 +4418,10 @@
       "header": "No of Female Beneficiaries",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4423,10 +4430,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "beneficiary_sector",
-      "coverage": "partial",
-      "current_destination": "beneficiary_sectors / project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_sector_metrics",
       "target_module": "Sector Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4435,10 +4442,10 @@
       "header": "No of Beneficiaries Oriented",
       "kind": "source_input",
       "domain": "convergence",
-      "coverage": "partial",
-      "current_destination": "project_convergences",
+      "coverage": "covered",
+      "current_destination": "project_special_program_metrics",
       "target_module": "YAKAP Orientation Metric",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4447,10 +4454,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4459,10 +4466,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4471,10 +4478,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4483,10 +4490,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4495,10 +4502,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4507,10 +4514,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4519,10 +4526,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4531,10 +4538,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4543,10 +4550,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4555,10 +4562,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4567,10 +4574,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4579,10 +4586,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4591,10 +4598,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4603,10 +4610,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4615,10 +4622,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4627,10 +4634,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4639,10 +4646,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4651,10 +4658,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4663,10 +4670,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4675,10 +4682,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4687,10 +4694,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4699,10 +4706,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4711,10 +4718,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4723,10 +4730,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4735,10 +4742,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4747,10 +4754,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4759,10 +4766,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4771,10 +4778,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4783,10 +4790,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4795,10 +4802,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4807,10 +4814,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4819,10 +4826,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4831,10 +4838,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4843,10 +4850,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4855,10 +4862,10 @@
       "header": "No of Beneficiaries",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "WORKING SHEET (ALL 2026 PROJECT",
@@ -4867,10 +4874,10 @@
       "header": "Amount of Assistance",
       "kind": "source_input",
       "domain": "livelihood",
-      "coverage": "partial",
-      "current_destination": "project_livelihoods",
+      "coverage": "covered",
+      "current_destination": "project_livelihood_metrics",
       "target_module": "Livelihood Beneficiary & Assistance Metrics",
-      "target_phase": "Phase 10"
+      "target_phase": "Existing (Phase 10)"
     },
     {
       "sheet": "ADJUSTED TARGET",

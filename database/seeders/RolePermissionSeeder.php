@@ -65,6 +65,7 @@ class RolePermissionSeeder extends Seeder
             PermissionName::ProjectProcessingView->value,
             PermissionName::ProjectDocumentsView->value,
             PermissionName::ProjectMonitoringView->value,
+            PermissionName::ProjectSpreadsheetDetailsView->value,
             PermissionName::ReportsView->value,
             PermissionName::ReportsExport->value,
             PermissionName::FundTargetsView->value,
@@ -90,6 +91,7 @@ class RolePermissionSeeder extends Seeder
                 PermissionName::ProjectProcessingUpdate->value,
                 PermissionName::ProjectDocumentsUpdate->value,
                 PermissionName::ProjectMonitoringUpdate->value,
+                PermissionName::ProjectSpreadsheetDetailsUpdate->value,
             ]);
         }
 

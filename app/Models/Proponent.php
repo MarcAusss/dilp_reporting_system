@@ -14,6 +14,10 @@ class Proponent extends Model
     protected $fillable = [
         'type',
         'name',
+        'abbreviation',
+        'head_name',
+        'organization_name',
+        'organization_classification',
         'contact_person',
         'contact_number',
         'email',

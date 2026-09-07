@@ -13,6 +13,12 @@ class ProjectDisbursement extends Model
         'disbursement_number',
         'payment_reference',
         'payee',
+        'prepared_at',
+        'forwarded_to_signatories_at',
+        'released_at',
+        'check_lddap_number',
+        'check_lddap_date',
+        'dv_number',
         'disbursement_date',
         'amount',
         'status',
@@ -25,6 +31,10 @@ class ProjectDisbursement extends Model
     {
         return [
             'disbursement_date' => 'date',
+            'prepared_at' => 'date',
+            'forwarded_to_signatories_at' => 'date',
+            'released_at' => 'datetime',
+            'check_lddap_date' => 'date',
             'amount' => 'decimal:2',
             'status' => DisbursementStatus::class,
         ];

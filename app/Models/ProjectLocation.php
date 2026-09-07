@@ -13,6 +13,8 @@ class ProjectLocation extends Model
         'municipality_id',
         'barangay_id',
         'address_detail',
+        'district',
+        'income_class',
         'is_primary',
     ];
 

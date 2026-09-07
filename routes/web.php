@@ -167,6 +167,20 @@ Route::middleware([
     )->name('projects.processing');
 });
 
+
+Route::middleware([
+    'auth',
+    'can:project-spreadsheet-details.view',
+])->group(function () {
+    Route::get(
+        '/projects/{project}/spreadsheet-details',
+        fn (Project $project) => view(
+            'projects.spreadsheet-details',
+            compact('project')
+        )
+    )->name('projects.spreadsheet-details');
+});
+
 Route::middleware([
     'auth',
     'can:project-monitoring.view',

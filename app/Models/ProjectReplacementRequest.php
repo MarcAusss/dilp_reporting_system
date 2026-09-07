@@ -13,6 +13,12 @@ class ProjectReplacementRequest extends Model
         'reference_number',
         'item_description',
         'reason',
+        'beneficiaries_replaced',
+        'original_beneficiary',
+        'replacement_beneficiary',
+        'approval_letter_date',
+        'released_at',
+        'are_insurance_received_at',
         'requested_amount',
         'request_date',
         'resolution_date',
@@ -27,6 +33,9 @@ class ProjectReplacementRequest extends Model
         return [
             'requested_amount' => 'decimal:2',
             'request_date' => 'date',
+            'approval_letter_date' => 'date',
+            'released_at' => 'datetime',
+            'are_insurance_received_at' => 'date',
             'resolution_date' => 'date',
             'status' => ReplacementRequestStatus::class,
         ];

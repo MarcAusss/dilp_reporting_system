@@ -226,4 +226,21 @@ class Project extends Model
     {
         return $this->hasMany(ProjectComplianceReport::class);
     }
+
+
+    public function fundingDetail(): HasOne { return $this->hasOne(ProjectFundingDetail::class); }
+    public function endorsements(): HasMany { return $this->hasMany(ProjectEndorsement::class); }
+    public function complianceCommunications(): HasMany { return $this->hasMany(ProjectComplianceCommunication::class); }
+    public function disValidation(): HasOne { return $this->hasOne(ProjectDisValidation::class); }
+    public function beneficiaryMetric(): HasOne { return $this->hasOne(ProjectBeneficiaryMetric::class); }
+    public function moaRecord(): HasOne { return $this->hasOne(ProjectMoaRecord::class); }
+    public function gpaiRecords(): HasMany { return $this->hasMany(ProjectGpaiRecord::class); }
+    public function stageMetrics(): HasMany { return $this->hasMany(ProjectStageMetric::class); }
+    public function sectorMetrics(): HasMany { return $this->hasMany(ProjectSectorMetric::class); }
+    public function livelihoodMetrics(): HasMany { return $this->hasMany(ProjectLivelihoodMetric::class); }
+    public function specialProgramMetrics(): HasMany { return $this->hasMany(ProjectSpecialProgramMetric::class); }
+    public function reportingInclusions(): HasMany { return $this->hasMany(ProjectReportingInclusion::class); }
+    public function postImplementationRecords(): HasMany { return $this->hasMany(ProjectPostImplementationRecord::class); }
+    public function convergenceMetrics(): HasMany { return $this->hasMany(ProjectConvergenceMetric::class); }
+    public function statusSnapshots(): HasMany { return $this->hasMany(ProjectStatusSnapshot::class); }
 }

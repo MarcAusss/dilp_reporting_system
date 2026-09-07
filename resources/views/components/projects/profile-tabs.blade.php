@@ -43,6 +43,11 @@
             'permission' => 'project-processing.view',
         ],
         [
+            'label' => 'Spreadsheet Details',
+            'route' => 'projects.spreadsheet-details',
+            'permission' => 'project-spreadsheet-details.view',
+        ],
+        [
             'label' => 'Documents',
             'route' => 'projects.documents',
             'permission' => 'project-documents.view',
